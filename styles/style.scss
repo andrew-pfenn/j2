@@ -3,15 +3,20 @@ $h2: 4rem;
 $h3: 2.5rem;
 $h4: 2rem;
 $text: 2.5rem;
-$gradient: linear-gradient(90deg, rgba(168,186,234,1) 0%, rgba(16,60,172,1) 50%, rgba(25,41,83,1) 100%);
-$background-color: #154353;
+// $gradient: linear-gradient(90deg, rgba(168,186,234,1) 0%, rgba(16,60,172,1) 50%, rgba(25,41,83,1) 100%);
+// $background-color: #154353;
+// $new-color: #ebebe3;
+// $raisin: #272727;
+// $chestnut: #96705b;
+// $champagne: #f6d8ae;
+// $ice: #84acce;
+// $light-blue: #3f88c5;
 $grey-text: #2c2c2c;
-$new-color: #ebebe3;
-$raisin: #272727;
-$chestnut: #96705b;
-$champagne: #f6d8ae;
-$ice: #84acce;
-$light-blue: #3f88c5;
+$dblue: #2B3964;
+$lblue: #99A7FF;
+$maize: #F3E13F;
+$cham: #A48165;
+$plat: #E5E5E5;
 
 // @include flex() wherever you want to use
 @mixin flex($justify, $align, $direction){
