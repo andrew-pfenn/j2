@@ -3,12 +3,28 @@
     margin: 0 0 auto;
 }
 body{
-    background-image: url(/j2/icon-img/johan-bergstrom-Ov12A_3Xstk-unsplash.jpg);
-    background-size: cover;
+    @include flex(center, center, row);
 }
-main{
+.most{
+    
+}
+.outer{
+    // min-height: 3vh;
+}
+.side-links{
+    // min-width: 10vw
+    background: black;
+}
+.main{
+    // position: absolute;
+    // top: 0px;
+    // left: 0px;
     // display: flex;
     @include flex(center, center, row);
+    background-image: url(/j2/icon-img/unnamed\ \(4\).jpg);
+    background-size: cover;
+    max-width: 90vmax;
+    height: auto
 }
 .intro-glass{
     @include flex(center, center, row);
@@ -20,10 +36,12 @@ main{
 .side{
     padding: 0rem;
     margin: 0rem;
+    transform: rotate(180deg);
     .side-text{
         writing-mode: vertical-lr;
         font-size: 9rem;
-        color: rgba(255, 255, 255, 0.26);
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.726);
     }
 }
 .glass{
@@ -35,28 +53,29 @@ main{
     border: 1px solid rgba(255, 255, 255, 0.26);
     //
     padding: 8rem;
-    min-height: 100vh;
+    min-height: 90vh;
     h1{
+        padding: 3rem;
         display: inline-block;
-        color: $powder;
-        font-size: 5rem;
+        color: $pine_green;
+        font-size: 6rem;
+        font-weight: 600;
         img{
             max-width: 3rem;
         }
     }
     
     p{
-        color: $powder;
-    }
-    button{
-
+        color: $eerie;
+        font-size: 3rem;
+        padding: 3rem;
     }
 }
 
 
 .nav-links{
-    min-height: 20vh;
-    border: solid white;
+    // min-height: 20vh;
+    // border: solid white;
     flex: 1 1 40vw;
     align-self: flex-end;
 }
