@@ -3,12 +3,8 @@ html {
 }
 
 body {
-  background-attachment: fixed;
-  background-image: url(../icon-img/Vector.svg);
-  background-repeat: repeat;
-  color: #181f1c;
-  background-color: #018172;
   font-family: "Montserrat", sans-serif;
+  font-weight: 300;
 }
 
 * {
@@ -50,80 +46,142 @@ a {
   font-size: 2rem;
 }
 
-.main-head {
-  width: 95%;
-  margin: 0 0 auto;
-}
-
 body {
+  background-color: #212121;
+}
+
+nav {
+  background-image: linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+  background-blend-mode: normal, lighten, soft-light;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  min-height: 10vh;
+  flex-wrap: wrap;
 }
-
-.side-links {
-  background: black;
-}
-
-.main {
+nav .logo {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-  background-image: url(/j2/icon-img/unnamed\ \(4\).jpg);
-  background-size: cover;
-  max-width: 90vmax;
-  height: auto;
+  flex: 1 1 10rem;
+  margin: 0rem 2rem;
 }
-
-.intro-glass {
+nav .logo h1 {
+  margin: 2rem;
+  color: #212121;
+}
+nav ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  flex: 1 1 40vw;
+  flex: 1 1 40rem;
+  list-style: none;
+}
+nav ul li {
+  color: #212121;
 }
 
-.side {
-  padding: 0rem;
-  margin: 0rem;
-  transform: rotate(180deg);
-}
-.side .side-text {
-  writing-mode: vertical-lr;
-  font-size: 9rem;
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.726);
-}
-
-.glass {
-  /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.29);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(3.3px);
-  -webkit-backdrop-filter: blur(3.3px);
-  border: 1px solid rgba(255, 255, 255, 0.26);
-  padding: 8rem;
+.intro {
   min-height: 90vh;
-}
-.glass h1 {
-  padding: 3rem;
-  display: inline-block;
-  color: #018172;
-  font-size: 6rem;
-  font-weight: 600;
-}
-.glass h1 img {
-  max-width: 3rem;
-}
-.glass p {
-  color: #181f1c;
-  font-size: 3rem;
-  padding: 3rem;
+  margin: auto;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
-.nav-links {
-  flex: 1 1 40vw;
-  align-self: flex-end;
+.intro-text {
+  flex: 1 1 50rem;
+  color: #fbfef9;
+}
+
+.intro-img {
+  align-self: flex-start;
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  flex: 1 1 50rem;
+  min-height: 90vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: column;
+}
+.intro-img .image img {
+  max-width: 100rem;
+}
+.intro-img .description {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.intro-img .description p {
+  align-self: flex-start;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  padding-left: 0.5rem;
+}
+.intro-img .description .box {
+  margin-top: 4rem;
+  height: 66.66%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro-img .description .btn {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 150px;
+  cursor: pointer;
+  color: #212121;
+  transition: all 0.3s;
+  position: relative;
+}
+.intro-img .description .btn button {
+  z-index: 2;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #212121;
+  font-size: 17px;
+  border: none;
+  background-color: transparent;
+}
+.intro-img .description .btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.intro-img .description .btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.intro-img .description .btn:hover::before {
+  transform: rotate(-45deg);
+  background-color: rgba(255, 255, 255, 0);
+}
+.intro-img .description .btn:hover::after {
+  transform: rotate(45deg);
+  background-color: rgba(255, 255, 255, 0);
 }/*# sourceMappingURL=style.css.map */
