@@ -2,3 +2,61 @@
     width: 95%;
     margin: 0 0 auto;
 }
+body{
+    background-image: url(/j2/icon-img/johan-bergstrom-Ov12A_3Xstk-unsplash.jpg);
+    background-size: cover;
+}
+main{
+    // display: flex;
+    @include flex(center, center, row);
+}
+.intro-glass{
+    @include flex(center, center, row);
+    // min-height: 90vh;
+    // border: solid white;
+    flex: 1 1 40vw;
+    
+}
+.side{
+    padding: 0rem;
+    margin: 0rem;
+    .side-text{
+        writing-mode: vertical-lr;
+        font-size: 9rem;
+        color: rgba(255, 255, 255, 0.26);
+    }
+}
+.glass{
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.29);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.3px);
+    -webkit-backdrop-filter: blur(3.3px);
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    //
+    padding: 8rem;
+    min-height: 100vh;
+    h1{
+        display: inline-block;
+        color: $powder;
+        font-size: 5rem;
+        img{
+            max-width: 3rem;
+        }
+    }
+    
+    p{
+        color: $powder;
+    }
+    button{
+
+    }
+}
+
+
+.nav-links{
+    min-height: 20vh;
+    border: solid white;
+    flex: 1 1 40vw;
+    align-self: flex-end;
+}

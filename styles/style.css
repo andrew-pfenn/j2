@@ -1,6 +1,14 @@
 html {
   font-size: 62.5%;
-  background-color: #e5e5e5;
+}
+
+body {
+  background-attachment: fixed;
+  background-image: url(../icon-img/Vector.svg);
+  background-repeat: repeat;
+  color: #181f1c;
+  background-color: #018172;
+  font-family: "Montserrat", sans-serif;
 }
 
 * {
@@ -40,10 +48,67 @@ h4, h5 {
 a {
   text-decoration: none;
   font-size: 2rem;
-  color: #ebebe3;
 }
 
 .main-head {
   width: 95%;
   margin: 0 0 auto;
+}
+
+body {
+  background-image: url(/j2/icon-img/johan-bergstrom-Ov12A_3Xstk-unsplash.jpg);
+  background-size: cover;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.intro-glass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex: 1 1 40vw;
+}
+
+.side {
+  padding: 0rem;
+  margin: 0rem;
+}
+.side .side-text {
+  writing-mode: vertical-lr;
+  font-size: 9rem;
+  color: rgba(255, 255, 255, 0.26);
+}
+
+.glass {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.29);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.3px);
+  -webkit-backdrop-filter: blur(3.3px);
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  padding: 8rem;
+  min-height: 100vh;
+}
+.glass h1 {
+  display: inline-block;
+  color: #fbfef9;
+  font-size: 5rem;
+}
+.glass h1 img {
+  max-width: 3rem;
+}
+.glass p {
+  color: #fbfef9;
+}
+.nav-links {
+  min-height: 20vh;
+  border: solid white;
+  flex: 1 1 40vw;
+  align-self: flex-end;
 }/*# sourceMappingURL=style.css.map */
