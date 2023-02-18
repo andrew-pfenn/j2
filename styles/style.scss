@@ -34,3 +34,24 @@ $tea: #c7f0bd;
 
 @import "global";
 @import "intro";
+@import "gallery";
+// @import "about";
+
+@media screen and (max-width: 1380px){
+    html{
+        font-size: 51%;
+    }
+    nav{
+        .logo{
+            img{
+                max-width: 5rem;
+            }
+        }
+    }
+    #main-img{
+        max-width: 65rem;
+    }
+    .image{
+        padding-top: 5rem;
+    }
+}

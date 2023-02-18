@@ -1,0 +1,39 @@
+@import "global";
+
+body{
+    background-color: #e8e8e8;
+}
+nav{
+
+    background-color: #e8e8e8;
+    @include flex(space-between, center, row);
+    min-height: 10vh;
+    flex-wrap: wrap;
+    .logo{
+        @include flex(flex-start, center, row);
+        flex: 1 1 10rem;
+        h1{
+            margin: 2rem;
+            color: #212121;
+        }
+        margin: 0rem 2rem;
+    }
+    ul{
+        @include flex(flex-end, center, row);
+        flex: 1 1 10rem;
+        list-style: none;
+        li{
+          padding: 0 10rem 0 10rem;
+          list-style: none;
+          a{
+            color: #212121;
+          }
+        }
+    }
+    .active{
+      background-color: #212121;
+      color: #e8e8e8;
+      padding: 1rem;
+      border-radius: 1rem;
+    }
+}

@@ -48,7 +48,7 @@ nav{
     margin: auto;
     flex-wrap: wrap;
     @include flex(center, center, row);
-    
+    flex-wrap: wrap;
 }
 .intro-text{
     padding: 3rem;
