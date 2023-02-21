@@ -55,3 +55,35 @@ $tea: #c7f0bd;
         padding-top: 5rem;
     }
 }
+
+
+// PHONE
+@media screen and (max-width: 754px){
+    html{
+        font-size: 45%;
+    }
+    main-head{
+        width: 100%;
+    }
+    nav{
+        .logo{
+            @include flex(center, center, column);
+            flex: 1 1 20rem;
+        }
+        ul{
+            @include flex(space-around, center, row);
+            padding: none;
+        }
+    }
+    intro-text{
+        text-align: center;
+    }
+
+    #main-img{
+        width: 100%;
+        height: 100%;
+    }
+    button{
+        margin-top: 3rem;
+    }
+}

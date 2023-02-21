@@ -253,4 +253,36 @@ nav .active {
   .image {
     padding-top: 5rem;
   }
+}
+@media screen and (max-width: 754px) {
+  html {
+    font-size: 45%;
+  }
+  main-head {
+    width: 100%;
+  }
+  nav .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1 1 20rem;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding: none;
+  }
+  intro-text {
+    text-align: center;
+  }
+  #main-img {
+    width: 100%;
+    height: 100%;
+  }
+  button {
+    margin-top: 3rem;
+  }
 }/*# sourceMappingURL=style.css.map */
